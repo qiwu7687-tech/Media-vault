@@ -1,0 +1,4 @@
+httpx>=0.24.0
+qrcode>=7.4
+Pillow>=9.0
+quarkpan>=1.0.5

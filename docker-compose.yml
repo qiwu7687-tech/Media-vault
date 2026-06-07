@@ -1,0 +1,15 @@
+# MediaVault — PanSou search engine
+# Start with: docker compose up -d
+
+services:
+  pansou:
+    image: ghcr.io/fish2018/pansou:latest
+    container_name: pansou
+    ports:
+      - "8888:8888"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:8888"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

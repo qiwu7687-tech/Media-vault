@@ -1,0 +1,22 @@
+{
+  "quark": {
+    "username": "",
+    "password": "",
+    "cookie": ""
+  },
+  "plugins": {
+    "example": {
+      "enabled": false
+    },
+    "pansou": {
+      "enabled": false,
+      "endpoint": "http://localhost:8888",
+      "timeout": 15
+    },
+    "wp365": {
+      "enabled": true
+    }
+  },
+  "save_folder": "夸克影视",
+  "omdb_api_key": ""
+}
